@@ -57,3 +57,18 @@ Common programming concepts in the context of Rust, with conventions.
 - Documentation comments are something else*
 
 ## Control Flow
+
+- Conditional control flow with `if`
+  - `if` conditions must always evaluate to a `bool`
+  - `else` is optional
+  - multiple branches possible with `else if`
+  - `if` can be used on the RHS of a `let` statement, but the type must be same
+- Looping with `loop`, `while`, and `for`
+  - `loop` enters the program into an infinite loop until an explicit `break`
+  - `continue` is also a keyword
+  - `break` and `continue` apply to the innermost loop at the point
+  - loop labels are possible which can be invoked later
+  - adding a value after `break` can return a value from the loop, making it an expression
+  - `while` is for conditional loops
+  - `for` loops through a collection
+  - `for` is the *safest* loop to use
