@@ -38,9 +38,22 @@ Common programming concepts in the context of Rust, with conventions.
   - Array types are specified with a semi colon as such - `[i32; 5]`
   - Arrays can be accessed by indexing and using square brackets
 
-
 ## Functions
 
+- Convention is to use *snake_case* when defining functions
+- Functions are defined using the `fn` keyword and invoked directly
+- For parameters, the type *must* be declared in the function signature
+- Statements are instructions that return no value, expressions return a value
+  - `let x = 3 + 2` is a statement, `3 + 2` is an expression
+  - expressions do not end with semicolons
+- Functions that return a value must have return type in signature after `->`
+  - By default last expression is returned; be careful of `;`
+  - Can return early using `return` keyword
+
 ## Comments
+
+- All comments begin with `//` including multiline comments
+- Multiline comments must begin with `//` on each line
+- Documentation comments are something else*
 
 ## Control Flow
