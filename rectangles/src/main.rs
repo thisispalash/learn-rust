@@ -24,6 +24,9 @@ fn main() {
         "The area of the rectangle is {} square pixels.",
         area_struct(&rect2)
     );
+
+    println!("The rectangle was {:?}", rect2); // single line
+    println!("The rectangle was {:#?}", rect2); // multi line
 }
 
 fn area(width: u32, height: u32) -> u32 {
@@ -34,6 +37,7 @@ fn area_tup(dimensions: (u32, u32)) -> u32 {
     dimensions.0 * dimensions.1
 }
 
+#[derive(Debug)] // this allows for Rectangles to be printed to stdout using `:?` or `:#?`
 struct Rectangle {
     width: u32,
     height: u32,
