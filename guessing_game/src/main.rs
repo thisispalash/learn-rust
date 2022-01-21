@@ -1,13 +1,13 @@
-use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
+use std::io;
 
 fn main() {
     println!("Guess the numbah!");
-    
+
     let secret_number = rand::thread_rng().gen_range(1..=100);
     let mut tries: u32 = 0;
-    
+
     loop {
         tries += 1; // increase loop counter
 
@@ -23,7 +23,7 @@ fn main() {
             Err(_) => {
                 println!("Invalid input, please try again");
                 continue;
-            },
+            }
         };
 
         match guess.cmp(&secret_number) {
@@ -32,7 +32,7 @@ fn main() {
             Ordering::Equal => {
                 println!("You win!");
                 break;
-            },
+            }
         }
     }
     println!("The secret was {}", secret_number);
