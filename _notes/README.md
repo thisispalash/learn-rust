@@ -1,3 +1,4 @@
 - [`cargo.md`](cargo.md) Useful cargo commands
 - [`common.md`](common.md) Common programming concepts in the context of Rust
-- 
+- [`ownership.md`](ownership.md) Ownership, borrowing (references), and slices
+- [`structs.md`](structs.md) Structuring related data
