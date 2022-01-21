@@ -25,8 +25,12 @@ fn main() {
         area_struct(&rect2)
     );
 
-    println!("The rectangle was {:?}", rect2); // single line
-    println!("The rectangle was {:#?}", rect2); // multi line
+    println!("single line: The rectangle was {:?}", rect2); // single line
+    println!("mutli line: The rectangle was {:#?}", rect2); // multi line
+
+    // finally `dbg!` macro
+    dbg!(&rect1);
+    dbg!(&rect2);
 }
 
 fn area(width: u32, height: u32) -> u32 {
