@@ -17,3 +17,10 @@
 - Mutable references are not allowed after immutable references as well
 - As always, scopes can be modified to allow multiple mutable references, just not *simultaneous* ones
 - There can be any number of immutable references, since they cannot change the data
+
+## Slices
+
+- We can slice collections using `..`
+- Slices create an immutable reference, so errors are caught at compile time
+- String literals are slices, ie, they have type `&str`
+- Slices ensure memory safe programs by introducing references
