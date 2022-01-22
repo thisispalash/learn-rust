@@ -10,3 +10,11 @@
   - This may invalidate the earlier struct instance in case of `move` operation (see [`ownership`](ownership.md))
 - *struct tuples* are possible by not naming the fields, eg. `struct Point(i32,i32,i32);`
 - Unit like structs are also possible which have no fields. They behave like `()`.
+
+## Methods
+
+- Methods are functions defined within `impl` and are bound to the structs
+- Their first param is typically `self`
+- All `fn` within `impl` are associated functions
+- In case of no `self`, the associated function, note not method, acts like a constructor
+- Multiple `impl` blocks are syntactically valid
