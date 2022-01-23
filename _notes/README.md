@@ -2,3 +2,4 @@
 - [`common.md`](common.md) Common programming concepts in the context of Rust
 - [`ownership.md`](ownership.md) Ownership, borrowing (references), and slices
 - [`structs.md`](structs.md) Structuring related data
+- [`enums.md`](enums.md) Enunumerations and pattern matching
