@@ -15,3 +15,10 @@
   - So, for the `Option<T>` enum, we can extract the value in `x` using `Some(x) => {}`
 - Matches are *exhaustive* but there exist catch-all patterns for default operations
 - The `_` placeholder is a catch-all pattern that does not bind any value
+
+## `if let` sugar
+
+- In case of matching only one pattern, use `if let ... = ... {}`
+- The trade off is losing exhaustiveness of `match` control flow
+- `else` can be used to match all other patterns
+- The main objective is to reduce boilerplate code
