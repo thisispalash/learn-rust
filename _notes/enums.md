@@ -6,3 +6,12 @@
 - Methods on enums are also possible using `impl`
 - Rust provides the `Option<T>` enum to provide `null` functionality with variants `None` and `Some(T)`
 - `Option<T>` is included in the prelude so `let x = Some(5)` is possible
+
+## `match` control flow
+
+- The `match` operator allows you to compare a value against patterns
+- The power comes from the compiler *ensuring* all possible patterns are accounted for
+- The match arms can bind the values that match the pattern
+  - So, for the `Option<T>` enum, we can extract the value in `x` using `Some(x) => {}`
+- Matches are *exhaustive* but there exist catch-all patterns for default operations
+- The `_` placeholder is a catch-all pattern that does not bind any value
