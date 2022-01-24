@@ -3,3 +3,4 @@
 - [`ownership.md`](ownership.md) Ownership, borrowing (references), and slices
 - [`structs.md`](structs.md) Structuring related data
 - [`enums.md`](enums.md) Enunumerations and pattern matching
+- [`modules.md`](modules.md) Module System — Packages, Crates, Modules, and Paths
